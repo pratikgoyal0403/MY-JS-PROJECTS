@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #5fbaa7;
+}
+body{
+    background-color: rgb(235, 235, 235);
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.container{
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.img{
+    margin-left: 20px;
+    width: fit-content;
+}
+.money-img{
+    width: 60%;
+}
+.primary-heading{
+    color: var(--primary-color);
+    width: fit-content;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.para{
+    margin-top: 10px;
+}
+.conversion-container{
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: 60%;
+}
+.currency-one, .currency-two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.currency-one select, .currency-two select{
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: transparent;
+    border-color: grey;
+}
+.currency-one select:focus{
+    outline: none;
+}
+.currency-two select:focus{
+    outline: none;
+}
+.currency-one input, .currency-two input{
+    background-color: transparent;
+    border: none;
+    text-align: right;
+    font-size: 26px;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+.currency-one input:focus, .currency-two input:focus{
+    outline: none;
+}
+.swap{
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.swap-currency-btn{
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px 1px ;
+}
+.swap-currency-btn:focus{
+    outline: none;
+}
+.curr-rate{
+    font-size: 14px;
+    margin-right: 20px;
+    color: var(--primary-color);
+}

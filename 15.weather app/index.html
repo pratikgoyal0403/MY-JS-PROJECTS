@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="spinner"></div>
+    <div class="main">
+      <div class="temp-toggler">
+        <h1><sup>o</sup>C</h1>
+        <label class="switch">
+          <input type="checkbox" class="temp-toggler-feild" />
+          <span class="slider round"></span>
+        </label>
+        <h1><sup>o</sup>F</h1>
+      </div>
+      <div class="primary-container">
+        <div class="city-name"><h1 class="primary-heading"></h1></div>
+        <div class="weather">
+          <img src="" alt="weather" class="weather-img" />
+        </div>
+      </div>
+      <div class="secondary-container">
+        <div class="temp"><h2 class="secondary-heading"></h2></div>
+        <div class="weather-name"></div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js" defer></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/fontawesome.min.js"
+    integrity="sha256-NP9NujdEzS5m4ZxvNqkcbxyHB0dTRy9hG13RwTVBGwo="
+    crossorigin="anonymous"
+  ></script>
+</html>

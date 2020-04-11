@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(240, 240, 240);
+}
+.stepper-form {
+  width: 50%;
+  height: 80%;
+  margin: 100px auto;
+  padding: 50px auto;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.144),
+    -10px -10px 10px rgba(233, 233, 233, 0.733);
+}
+.step-list {
+  list-style-type: none;
+  /* border: 2px solid red; */
+  margin: 60px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+  counter-reset: step;
+}
+.step-list li {
+  position: relative;
+  margin: 10px 0px;
+  /* border: 2px solid lime; */
+}
+.step-list li::before {
+  content: counter(step);
+  counter-increment: step;
+  position: absolute;
+  text-align: center;
+  left: -40px;
+  top: 0%;
+  width: 20px;
+  height: 18px;
+  border: 2px solid rgb(199, 199, 199);
+  border-radius: 50%;
+  font-size: 18px;
+}
+.step-list li::after {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 20px;
+  width: 2px;
+  height: 100%;
+  background-color: rgb(199, 199, 199);
+}
+.step-list li:last-child:after {
+  display: none;
+}
+.step-1,
+.step-2,
+.step-3 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  display: none;
+}
+input {
+  border: none;
+  padding: 5px 0px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-bottom: 2px solid grey;
+}
+input:focus {
+  outline: none;
+}
+.buttons button {
+  margin-top: 15px;
+  margin-left: 10px;
+  border: none;
+  background-color: rgb(42, 223, 42);
+  color: white;
+  padding: 5px 10px;
+}
+.active {
+  display: block;
+}
+.error {
+  margin-top: 5px;
+  color: red;
+  text-transform: capitalize;
+  font-size: 14px;
+  display: none;
+}

@@ -1,0 +1,67 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+}
+.container {
+  width: 50%;
+  margin: auto;
+  padding: 5rem 2rem;
+  font-size: 1.6rem;
+}
+.primary-heading {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+.blog {
+  box-shadow: 1px 1px 3px grey;
+  padding: 1rem;
+  width: 80%;
+  margin: 2rem auto;
+}
+.blog h1 {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.loader {
+  opacity: 0;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+}
+.show-loader {
+  opacity: 1;
+}
+.circle {
+  background-color: rgb(49, 49, 49);
+  margin-right: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation: bounce 550ms linear infinite both;
+}
+.circle:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.circle:nth-child(3) {
+  animation-delay: 0.21s;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}

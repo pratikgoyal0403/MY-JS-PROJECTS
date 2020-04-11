@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Own custom maps</title>
+  <style>
+    body,html{
+      padding: 0px;
+      margin: 0px;
+
+    }
+    .map{
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div class="map" id="map"></div>
+</body>
+<script>
+  let map, latitude, longitude;
+  window.addEventListener('load', ()=>{
+      window.navigator.geolocation.getCurrentPosition((response)=>{
+        latitude = response.coords.latitude.toFixed(3);
+        longitude = response.coords.longitude.toFixed(3);
+        console.log(latitude, longitude)
+      }, (error)=>{
+        console.log(error);
+      })
+  });
+  function initMap(){
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: latitude, lng: longitude},
+      zoom: 8
+    });
+    console.log(map);
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCG9VY73G0bFB36UVXKFmQIzXapiY8kc6o&callback=initMap"
+async defer></script>
+</html>

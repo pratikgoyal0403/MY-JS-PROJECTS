@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Tracalorie calorie calculator</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header-primary-heading">Tracalorie</h1>
+      <button class="clear-btn">clear All</button>
+    </header>
+    <main>
+      <section class="main-input">
+        <h2 class="section-primary-heading">ADD MEAL / FOOD ITEM</h2>
+        <div class="form">
+          <div class="feild">
+            <label for="meal">Meal</label>
+            <input
+              type="text"
+              placeholder="Add Item"
+              class="input-feild meal"
+            />
+          </div>
+          <div class="feild">
+            <label for="calories">Calories</label>
+            <input
+              type="number"
+              placeholder="Add Calories"
+              class="input-feild calories"
+            />
+          </div>
+        </div>
+        <div class="input-btns">
+          <button class="add-btn btn"><span>+</span>Add Meal</button>
+          <button class="update-btn btn"><span>+</span>Update Meal</button>
+          <button class="delete-btn btn"><span>x</span>Delete Meal</button>
+        </div>
+      </section>
+      <div class="total">
+        <h1 class="primary-heading">Total Calories: 0</h1>
+      </div>
+      <div class="container"></div>
+    </main>
+  </body>
+</html>

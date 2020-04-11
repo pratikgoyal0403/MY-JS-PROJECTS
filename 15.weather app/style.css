@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* rgb(255, 1, 136), rgb(185, 0, 185 */
+.main {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(9, 182, 250),
+    rgb(2, 90, 161)
+  );
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.primary-container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.weather {
+  margin-left: 50px;
+}
+.secondary-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather-name {
+  font-size: 30px;
+  margin-left: 50px;
+}
+.temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid orange;
+}
+.secondary-heading {
+  font-size: 36px;
+  margin-right: 5px;
+}
+.temp span {
+  font-size: 30px;
+  color: skyblue;
+}
+
+.temp-toggler {
+  position: fixed;
+  top: 10px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: blue;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.temp-toggler h1 {
+  font-size: 30px;
+  margin: 0px 20px;
+  color: rgb(197, 226, 253);
+}
+.spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.spinner::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  border-top-color: orangered;
+  border-bottom-color: orangered;
+  animation: chakri 700ms ease infinite;
+}
+@keyframes chakri {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+/* i tries to make figures by my own */
+/* .sunny{
+ width: 200px;
+ height: 200px;
+ margin: auto;
+ display: none;
+
+}
+@keyframes rotateAlways{
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+.main-circle{
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: relative;
+    animation: rotateAlways 4s linear infinite;
+}
+.bars{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 1px;
+}
+.bar-1{
+    left: -10%;
+    top: -18%;
+    transform: rotate(45deg);
+}
+.bar-2{
+    left: -40%;
+    top: 50%;
+}
+.bar-3{
+    left: -5%;
+    top: 120%;
+    transform: rotate(-45deg);
+}
+.bar-4{
+    right: -10%;
+    top: -18%;
+    transform: rotate(135deg);
+}
+.bar-5{
+    right: -40%;
+    top: 50%;
+}
+.bar-6{
+    right: -5%;
+    top: 120%;
+    transform: rotate(-135deg);
+}
+
+.cloudy{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.ball{
+    width: 35%;
+    height: 48%;
+    margin: -20px;
+    border: 10px solid transparent;
+    border-radius: 50%;
+} */

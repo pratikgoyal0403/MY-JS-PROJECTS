@@ -1,0 +1,143 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: sans-serif;
+}
+header {
+  background-color: rgb(13, 164, 224);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  color: white;
+}
+.header-primary-heading {
+  font-size: 30px;
+  margin-left: 45vw;
+}
+.clear-btn {
+  margin-right: 10rem;
+  border: none;
+  background-color: skyblue;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.8rem;
+  box-shadow: 0rem 0.5rem 0.5rem rgb(6, 148, 204);
+}
+
+main {
+  width: 60vw;
+  margin: auto;
+}
+.main-input {
+  width: 100%;
+  padding: 3rem 1.5rem;
+  box-shadow: 0.3rem 0.3rem 0.5rem grey;
+  margin: 3rem 0rem;
+}
+.section-primary-heading {
+  font-size: 2.4rem;
+  font-weight: lighter;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feild {
+  width: 100%;
+}
+label {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.input-feild {
+  width: 95%;
+  border: none;
+  border-bottom: 2px solid grey;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+}
+.input-feild:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(23, 197, 168);
+}
+/* .input-feild:focus + label{
+    color: rgb(23, 197, 168);
+} */
+.input-btns {
+  margin-top: 2rem;
+  width: 50%;
+}
+.btn {
+  border: none;
+  font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  margin-left: 1rem;
+}
+
+.add-btn {
+  background-color: rgb(0, 86, 185);
+  box-shadow: 0rem 0.3rem 0.3rem rgb(0, 63, 136);
+}
+
+.update-btn {
+  display: none;
+  background-color: rgb(255, 152, 35);
+  box-shadow: 0rem 0.3rem 0.3rem rgb(218, 116, 0);
+}
+
+.delete-btn {
+  display: none;
+  background-color: rgb(255, 76, 44);
+  box-shadow: 0rem 0.3rem 0.3rem rgb(255, 38, 0);
+}
+.total {
+  width: 100%;
+  text-align: center;
+}
+.primary-heading {
+  font-size: 3.6rem;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+.container {
+  margin-top: 2rem;
+  width: 100%;
+}
+.food-calorie-box {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.5px solid black;
+}
+.text {
+  display: flex;
+  align-items: center;
+  font-style: italic;
+}
+.item {
+  font-size: 1.6rem;
+}
+.calories {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+}
+
+.edit-icon {
+  font-size: 1.6rem;
+  cursor: pointer;
+}

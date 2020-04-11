@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha256-2YQRJMXD7pIAPHiXr0s+vlRWA7GYJEK0ARns7k2sbHY="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lacquer&display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js" defer></script>
+    <title>Form validation</title>
+    <style>
+      .wrapper {
+        height: 100vh;
+        width: 70vw;
+        margin: auto;
+        text-align: center;
+      }
+
+      .feild {
+        width: 40%;
+        margin: auto;
+      }
+      input {
+        width: 100%;
+      }
+      .error-text {
+        color: red;
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="primary-heading">Sign up</h1>
+      <form>
+        <div class="feild username">
+          <label for="usename">Username:</label>
+          <input
+            type="text"
+            name="username"
+            class="username"
+            placeholder="Username"
+            required
+          />
+          <p class="error-text hide">
+            username must be between 3 to 10 characters
+          </p>
+        </div>
+        <div class="feild email">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            class="email"
+            placeholder="Email"
+            required
+          />
+          <p class="error-text hide">Enter a valid Email address</p>
+        </div>
+        <div class="feild password">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            class="password"
+            placeholder="Password"
+          />
+          <p class="error-text hide">
+            password must be between 4 to 8 characters
+          </p>
+        </div>
+        <button type="submit" class="submit">Sign up</button>
+      </form>
+    </div>
+  </body>
+</html>

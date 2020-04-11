@@ -1,0 +1,55 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edge {
+  width: 60vh;
+  height: 60vh;
+  background-image: url("./assests/clock.png");
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.109),
+    -0.2rem -0.1rem 0.5rem rgba(255, 255, 255, 0.733),
+    inset 1rem 1rem 1rem rgba(0, 0, 0, 0.109),
+    inset -0.2rem -0.1rem 0.5rem rgba(255, 255, 255, 0.733);
+}
+.hour {
+  width: 1rem;
+  height: 15vh;
+  background-color: black;
+  transform: translate(60%, -30%);
+  transform-origin: 50% 85%;
+  /* transition: transform 350ms linear; */
+}
+.minute {
+  width: 1rem;
+  height: 20vh;
+  background-color: black;
+  transform: translate(-45%, -30%);
+  transform-origin: 50% 85%;
+}
+.second {
+  width: 1rem;
+  height: 25vh;
+  background-color: red;
+  transform: translate(-135%, -30%);
+  transform-origin: 50% 85%;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Stepper form</title>
+  </head>
+  <body>
+    <div class="stepper-form">
+      <ul class="step-list">
+        <li data-completed>
+          step 1
+          <div class="step-1 active">
+            <label class="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+            <p class="error">*please enter a valid e-mail</p>
+            <div class="buttons">
+              <button class="next">Next</button>
+            </div>
+          </div>
+        </li>
+        <li data-completed>
+          step 2
+          <div class="step-2">
+            <label class="password">Password:</label>
+            <input type="password" name="password" id="password" required />
+            <p class="error">*password cannot be empty</p>
+            <div class="buttons">
+              <button class="back">Back</button>
+              <button class="next">Next</button>
+            </div>
+          </div>
+        </li>
+        <li data-completed>
+          step 3
+          <div class="step-3">
+            <label class="submit">Alright! you are ready to go</label>
+            <div class="buttons">
+              <button class="back">Back</button>
+              <button class="submit">Submit</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
